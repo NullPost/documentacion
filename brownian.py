@@ -23,7 +23,7 @@ for run in range(N):
     # Desplazamiento cuadrado
     msd = []
     for i in range(len(x)):
-        msd.append(np.sqrt(x[i]**2 + y[i]**2))
+        msd.append(x[i]**2 + y[i]**2)
     msd = np.array(msd)
     superMsd = np.vstack((superMsd,msd))
     
